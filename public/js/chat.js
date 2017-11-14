@@ -40,7 +40,7 @@ socket.on('updateUserList', function (users) {
     ol.append(jQuery('<li></li>').text(user));
   });
 
-  jQuery('#users').html(ol);  
+  jQuery('#users').html(ol);
 });
 
 //Event when server disconnects
@@ -97,7 +97,6 @@ jQuery('#message-form').on('submit', function (e) {
   var messageTextBox = jQuery('[name=message]');
 
   socket.emit('createMessage', {
-    from: 'User',
     text: messageTextBox.val()
   }, function () {
     messageTextBox.val('');
@@ -116,7 +115,6 @@ locationButton.on('click', function () {
   navigator.geolocation.getCurrentPosition(function (position) {
     locationButton.removeAttr('disabled').text('Send location');
     socket.emit('createLocationMessage', {
-      from: 'Admin',
       latitude: position.coords.latitude,
       longitude: position.coords.longitude
     });
