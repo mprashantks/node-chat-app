@@ -1,4 +1,4 @@
-# node-chat-app
+# Chat App
 A basic realtime chat application. This app uses Node.JS as backend and provides following functionalities :
 1. Real time text chat using socket.io
 2. Send location coordinates
