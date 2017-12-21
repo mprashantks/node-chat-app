@@ -1,7 +1,7 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A unified chat app",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
@@ -10,7 +10,7 @@
   "engines": {
     "node": "9.0.0"
   },
-  "author": "",
+  "author": "Prashant Singh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
