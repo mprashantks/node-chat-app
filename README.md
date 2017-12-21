@@ -1,5 +1,7 @@
 # Chat App
-A basic realtime chat application. This app uses Node.JS as backend and provides following functionalities :
+A basic realtime chat application. This app uses Node.JS as backend.
+
+## Functionalities
 1. Real time text chat using socket.io
 2. Send location coordinates
 3. Real time voice and video chat using WebRTC protocol
